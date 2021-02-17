@@ -10,18 +10,19 @@
     <link rel="stylesheet" href="./weather.css">
 </head>
 <body>
-    <header>
+    <header class="bg-dark pt-2 pb-2">
 <div class="container">
-    <h1>Weather App</h1>
+    <h1 class="text-center text-white">Weather App</h1>
 </div>
     </header>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-lg-3">
-            <h5>Searc for a city:</h5>
-            <div class="input-group"></div>
-            <input type="text" class="form-control" placeholder="search city here" class="input-group-append">
+        <div class="col-lg-3 bg-light pb-3 pt-3 mt-3">
+            <h5>Search for a city:</h5>
+            <div class="input-group mb-3">
+            <input id="searchTerm" type="text" class="form-control" placeholder="search city here" class="input-group-append">
             <button id="searchBtn" class="btn btn-primary" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+            </div>
             <div class="card">
                 <ul class="list-group list-group-flush list"></ul>
             </div>
