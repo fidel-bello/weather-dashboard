@@ -7,7 +7,8 @@ const apiKey = "&appid=b4df29657122f208c7d04c1f03714e1a";
 let date = new Date()
 
 $('#searchBtn').on('click', function(){
-    const queryUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + "Madison" + apiKey;
+    searchcity = $('#searchCity').val();
+    const queryUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + searchcity + apiKey;
     $.ajax({
         url: queryUrl,
         method: "GET"
